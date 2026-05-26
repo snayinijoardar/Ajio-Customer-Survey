@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,7 +19,6 @@ font-family:'Inter',sans-serif;
 }
 
 body{
-
 background:
 linear-gradient(
 rgba(4,18,45,.72),
@@ -35,114 +33,69 @@ background-attachment:fixed;
 min-height:100vh;
 padding:40px 20px;
 color:white;
-
 }
 
 .logo{
 text-align:center;
-margin-bottom:25px;
+margin-bottom:20px;
 }
 
 .ajio-logo{
-width:65px;
+width:55px;
 height:auto;
-
 background:white;
-
-padding:5px;
-
-border-radius:12px;
-
-box-shadow:0 4px 12px rgba(0,0,0,.12);
+padding:4px;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
 }
 
 .hero{
 text-align:center;
 max-width:900px;
 margin:auto;
-margin-bottom:35px;
+margin-bottom:30px;
 }
 
 .hero h1{
 font-size:52px;
 font-weight:900;
-margin-bottom:12px;
-}
-
-.hero p{
-font-size:18px;
-line-height:1.7;
-opacity:.95;
 }
 
 .container{
-
 max-width:1000px;
 margin:auto;
-
-background:rgba(255,255,255,.95);
-
-backdrop-filter:blur(18px);
-
+background:rgba(255,255,255,.96);
 padding:45px;
-
 border-radius:35px;
-
 color:#111827;
-
-box-shadow:
-0 25px 70px rgba(0,0,0,.35);
-
+box-shadow:0 25px 70px rgba(0,0,0,.35);
 }
 
 .question{
-
 background:white;
-
 padding:28px;
-
 margin-bottom:22px;
-
 border-radius:24px;
-
 border:1px solid #E6EDF7;
-
 }
 
 .qnum{
-
 width:52px;
 height:52px;
-
 display:flex;
 align-items:center;
 justify-content:center;
-
-background:
-linear-gradient(
-135deg,
-#102A5E,
-#2563EB
-);
-
+background:linear-gradient(135deg,#102A5E,#2563EB);
 color:white;
-
 font-weight:800;
-
 border-radius:16px;
-
 margin-bottom:18px;
-
 }
 
 .question h3{
-
 font-size:22px;
-
 line-height:1.5;
-
 margin-bottom:18px;
-
 }
 
 .required{
@@ -150,85 +103,47 @@ color:#ff4d6d;
 }
 
 .option{
-
 display:flex;
 align-items:center;
-
 padding:16px;
-
 margin-bottom:12px;
-
 background:#F8FAFF;
-
 border:2px solid #E8EEF8;
-
 border-radius:18px;
-
 cursor:pointer;
-
 transition:.25s;
-
 }
 
 .option:hover{
-
 border-color:#2563EB;
-
 transform:translateY(-2px);
-
 }
 
 .option input{
-
 margin-right:12px;
-
 transform:scale(1.15);
-
 accent-color:#102A5E;
-
 }
 
 textarea{
-
 width:100%;
-
 min-height:170px;
-
 padding:18px;
-
 font-size:15px;
-
 border-radius:18px;
-
 border:1px solid #DDE4F3;
-
 resize:vertical;
-
 }
 
 button{
-
-background:
-linear-gradient(
-135deg,
-#102A5E,
-#2563EB
-);
-
+background:linear-gradient(135deg,#102A5E,#2563EB);
 color:white;
-
 border:none;
-
 padding:18px 50px;
-
 font-size:16px;
-
 font-weight:800;
-
 border-radius:999px;
-
 cursor:pointer;
-
 }
 
 .center{
@@ -237,13 +152,9 @@ margin-top:25px;
 }
 
 .footer{
-
 text-align:center;
-
 margin-top:30px;
-
 color:#64748B;
-
 }
 
 @media(max-width:768px){
@@ -263,26 +174,16 @@ font-size:18px;
 }
 
 </style>
-
 </head>
 
 <body>
 
 <div class="logo">
-
-<img
-src="ajio-logo.png"
-alt="AJIO Logo"
-class="ajio-logo">
-
+<img src="ajio-logo.png" alt="AJIO Logo" class="ajio-logo">
 </div>
 
 <div class="hero">
-
-<h1>
-Help Us Improve Your AJIO Experience
-</h1>
-
+<h1>Help Us Improve Your AJIO Experience</h1>
 </div>
 
 <div class="container">
@@ -302,7 +203,6 @@ value="New AJIO Survey Response">
 
 <h3>
 What do you like most about shopping on AJIO?
-<span class="required">*</span>
 </h3>
 
 <label class="option">
@@ -326,7 +226,6 @@ Quality & Trust
 </label>
 
 </div>
-
 <!-- Q2 -->
 
 <div class="question">
@@ -337,6 +236,7 @@ Quality & Trust
 What is the one thing AJIO should improve the most?
 <span class="required">*</span>
 </h3>
+
 <label class="option">
 <input type="radio"
 name="improvement_area"
@@ -375,70 +275,20 @@ No major improvement needed
 
 </div>
 
-<!-- Q3 -->
+<!-- Q4 -->
 
 <div class="question">
 
 <div class="qnum">3</div>
 
 <h3>
-What is the biggest challenge when returning or exchanging a product?
-<span class="required">*</span>
-</h3>
-
-<label class="option">
-<input type="checkbox"
-name="returns_experience"
-value="Pickup Takes Time">
-Pickup Takes Time
-</label>
-
-<label class="option">
-<input type="checkbox"
-name="returns_experience"
-value="Refund Takes Time">
-Refund Takes Time
-</label>
-
-<label class="option">
-<input type="checkbox"
-name="returns_experience"
-value="Not Enough Updates">
-Not Enough Updates
-</label>
-
-<label class="option">
-<input type="checkbox"
-name="returns_experience"
-value="Return Process is Confusing">
-Return Process is Confusing
-</label>
-
-<label class="option">
-<input type="checkbox"
-name="returns_experience"
-value="No Issues">
-I have not faced any issues with returns or exchanges
-</label>
-
-</div>
-
-<!-- Q4 -->
-
-<div class="question">
-
-<div class="qnum">4</div>
-
-<h3>
 Which new feature would interest you the most?
-<span class="required">*</span>
 </h3>
 
 <label class="option">
 <input type="checkbox"
 name="new_features"
-value="Faster Delivery"
-required>
+value="Faster Delivery">
 Faster Delivery
 </label>
 
@@ -471,11 +321,12 @@ I am satisfied with the current features
 </label>
 
 </div>
+
 <!-- Q5 -->
 
 <div class="question">
 
-<div class="qnum">5</div>
+<div class="qnum">4</div>
 
 <h3>
 Would you pay for a premium membership with benefits like faster delivery, special offers and priority support?
@@ -529,7 +380,7 @@ I am satisfied with the current experience and do not need additional benefits
 
 <div class="question">
 
-<div class="qnum">6</div>
+<div class="qnum">5</div>
 
 <h3>
 If you could change one thing about AJIO, what would it be?
@@ -542,13 +393,12 @@ placeholder="Share your thoughts, ideas or suggestions here..."
 required></textarea>
 
 </div>
-
 <!-- Redirect After Submit -->
 
 <input
 type="hidden"
 name="_next"
-value="https://snayinijoardar.github.io/Ajio-Customer-Survey/thankyou.html">
+value="https://snayinijoardar.github.io/AJIO-Survey-Final/thankyou.html">
 
 <!-- Submit Button -->
 
@@ -608,11 +458,6 @@ alert(
 
 limitCheckboxGroup(
 'liked_features',
-2
-);
-
-limitCheckboxGroup(
-'returns_experience',
 2
 );
 

@@ -312,7 +312,7 @@ Quality & Trust
 <div class="qnum">2</div>
 
 <h3>
-What is the one thing AJIO should improve the most?
+What is the one thing AJIO should improve the most?<span class="required">*</span>
 </h3>
 
 <label class="option">
@@ -406,7 +406,7 @@ I have not faced any issues with returns or exchanges
 <div class="qnum">4</div>
 
 <h3>
-Which new feature would interest you the most?
+Which new feature would interest you the most?<span class="required">*</span>
 </h3>
 
 <label class="option">
@@ -452,7 +452,7 @@ I am satisfied with the current features
 <div class="qnum">5</div>
 
 <h3>
-Would you pay for a premium membership with benefits like faster delivery, special offers and priority support?
+Would you pay for a premium membership with benefits like faster delivery, special offers and priority support?<span class="required">*</span>
 </h3>
 
 <label class="option">
@@ -529,7 +529,55 @@ Submit Feedback →
 </button>
 
 </div>
+<script>
 
+document.querySelector("form").addEventListener("submit", function(e){
+
+// Q1
+if(document.querySelectorAll('input[name="shopping_likes"]:checked').length === 0){
+    alert("Please answer Question 1.");
+    e.preventDefault();
+    return;
+}
+
+// Q2
+if(!document.querySelector('input[name="improvement_area"]:checked')){
+    alert("Please answer Question 2.");
+    e.preventDefault();
+    return;
+}
+
+// Q3
+if(document.querySelectorAll('input[name="returns_experience"]:checked').length === 0){
+    alert("Please answer Question 3.");
+    e.preventDefault();
+    return;
+}
+
+// Q4
+if(document.querySelectorAll('input[name="new_features"]:checked').length === 0){
+    alert("Please answer Question 4.");
+    e.preventDefault();
+    return;
+}
+
+// Q5
+if(!document.querySelector('input[name="premium_membership"]:checked')){
+    alert("Please answer Question 5.");
+    e.preventDefault();
+    return;
+}
+
+// Q6
+if(document.querySelector('textarea[name="final_suggestion"]').value.trim() === ""){
+    alert("Please answer Question 6.");
+    e.preventDefault();
+    return;
+}
+
+});
+
+</script>
 </form>
 
 <div class="footer">
